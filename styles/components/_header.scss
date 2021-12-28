@@ -1,0 +1,40 @@
+header {
+  height: 100vh;
+  padding: 15px;
+
+  .container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    font-family: $font-1;
+
+    h1 {
+      padding-bottom: 40px;
+    }
+
+    p {
+      text-transform: capitalize;
+      font-size: 0.8rem;
+      font-weight: 200;
+      color: rgb(207, 203, 203);
+    }
+
+    span {
+      padding: 20px 0 10px;
+      color: rgb(243, 241, 241);
+    }
+  }
+}

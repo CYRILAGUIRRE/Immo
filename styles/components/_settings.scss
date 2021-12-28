@@ -1,0 +1,51 @@
+$path-css: "../assets/";
+
+@font-face {
+  font-family: "font-1";
+  src: url(#{$path-css}fonts/MerriweatherSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(#{$path-css}fonts/Poppins-Regular.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+$font-2: "font-2", sans-serif;
+
+$color-1: rgb(25, 201, 157);
+$color-2: rgb(20, 127, 228);
+$color-3: black;
+
+@mixin centerChild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexChildren {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background: url(#{$path-css}img/01.272.07.005.jpg) center/cover;
+
+  &::after {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.993),
+      rgba(255, 255, 255, 0.068)
+    );
+  }
+}
