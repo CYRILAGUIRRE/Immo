@@ -30,18 +30,54 @@ header::after {
 
 header {
   height: 100vh;
-  padding: 15px;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.418)), to(rgba(255, 255, 255, 0.068)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.418), rgba(255, 255, 255, 0.068));
+  top: 0;
+  left: 0;
 }
 
 header .container {
+  width: 100%;
   height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
+  padding: 20px 20px 20px;
+  color: white;
 }
 
 header .navbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+}
+
+@media screen and (max-width: 400px) {
+  header .navbar .logo img {
+    max-width: 240px;
+  }
+}
+
+header .navbar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+header .navbar nav .main-pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,9 +85,84 @@ header .navbar {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .navbar nav .main-pages ul li {
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 750px) {
+  header .navbar nav .main-pages {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+header .navbar nav label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+  header .navbar nav label {
+    display: none;
+  }
+}
+
+header .navbar nav label img {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+header .navbar nav input {
+  display: none;
+}
+
+header .navbar nav input:checked + .main-pages {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  header .navbar ul {
+    width: 60%;
+  }
 }
 
 header .text {
@@ -67,6 +178,7 @@ header .text {
           justify-content: flex-end;
   color: white;
   font-family: "font-1", sans-serif;
+  z-index: 1;
 }
 
 header .text h1 {
@@ -77,11 +189,11 @@ header .text p {
   text-transform: capitalize;
   font-size: 0.8rem;
   font-weight: 200;
-  color: #cfcbcb;
+  color: white;
 }
 
 header .text span {
   padding: 20px 0 10px;
-  color: #f3f1f1;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
