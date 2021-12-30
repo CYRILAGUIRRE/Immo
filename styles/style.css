@@ -296,29 +296,29 @@ header .text span {
 }
 
 .main .card-2 .imgs {
-  height: 150px;
-  width: 200px;
+  height: 200px;
+  width: 100%;
   position: relative;
 }
 
 .main .card-2 .imgs .img3-container {
   background: url(../assets/img/Sendero-Verde-3.jpg) center;
   background-size: cover;
-  height: 100%;
-  width: 100%;
+  height: 95%;
+  width: 85%;
   margin-top: 40px;
   z-index: 2;
   position: absolute;
 }
 
 .main .card-2 .imgs .img4-container {
-  background: url(../assets/img/Sendero-Verde-1.jpg) center/cover;
+  background: url(../assets/img/Sendero-Verde-1.jpg) bottom/cover;
   -webkit-filter: saturate(0%);
           filter: saturate(0%);
   width: 110%;
   height: 100%;
-  -webkit-transform: translate(10px, 75px);
-          transform: translate(10px, 75px);
+  -webkit-transform: translate(10px, 80px);
+          transform: translate(10px, 80px);
   z-index: 1;
 }
 
@@ -337,13 +337,14 @@ header .text span {
 }
 
 .main .card-3 .imgs {
-  height: 150px;
-  width: 200px;
+  height: 260px;
+  width: 180px;
   position: relative;
+  margin: 0 auto;
 }
 
-.main .card-3 .imgs .img4-container {
-  background: url(../assets/img/Sendero-Verde-3.jpg) center;
+.main .card-3 .imgs .img5-container {
+  background: url(../assets/img/National-September11-Memorial-1.jpg) center;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -352,14 +353,14 @@ header .text span {
   position: absolute;
 }
 
-.main .card-3 .imgs .img5-container {
-  background: url(../assets/img/Sendero-Verde-1.jpg) center/cover;
+.main .card-3 .imgs .img6-container {
+  background: url(../assets/img/Dream-Downtown-Hotel-4.jpg) right/cover;
   -webkit-filter: saturate(0%);
           filter: saturate(0%);
-  width: 110%;
+  width: 100%;
   height: 100%;
-  -webkit-transform: translate(10px, 75px);
-          transform: translate(10px, 75px);
+  -webkit-transform: translate(-65px, 60px);
+          transform: translate(-65px, 60px);
   z-index: 1;
 }
 
@@ -377,6 +378,11 @@ header .text span {
   line-height: 18px;
 }
 
+.main .card-3 .text button {
+  display: block;
+  padding: 0 0 8px 0;
+}
+
 .main .office {
   display: none;
 }
@@ -387,5 +393,33 @@ header .text span {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.main .awards-container {
+  background: #19c99d;
+  color: white;
+  padding: 20px;
+  font-size: 0.6rem;
+}
+
+.main .awards-container h3 {
+  font-family: "font-2", sans-serif;
+}
+
+.main .awards-container p {
+  font-family: "font-3", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 15px;
+  font-size: 0.5rem;
+  color: whitesmoke;
+}
+
+.main .awards-container .award {
+  border-bottom: 1px solid;
+}
+
+.main .awards-container span {
+  margin-top: 200px;
 }
 /*# sourceMappingURL=style.css.map */
