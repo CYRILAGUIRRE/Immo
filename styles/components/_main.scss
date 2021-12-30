@@ -10,16 +10,17 @@
     padding-left: 5%;
   }
   .card-1 {
+    margin-top: 20px;
     .imgs {
-      height: 189px;
+      height: 250px;
       position: relative;
 
       .img1-container {
-        background: url(#{$path-css}img/office-hp.jpg) center;
-        object-fit: cover;
+        background: url(#{$path-css}img/office-hp.jpg) center/cover;
+
         height: 100%;
         width: 65%;
-        margin: 40px 50%;
+        margin: 10% 50%;
         transform: translateX(-50%);
         z-index: 2;
 
@@ -31,7 +32,7 @@
         filter: saturate(0%);
 
         width: 100%;
-        height: 70%;
+        height: 80%;
         margin: 0 auto;
         transform: translateY(80px);
         z-index: 1;
@@ -73,7 +74,7 @@
         background: url(#{$path-css}img/Sendero-Verde-1.jpg) bottom/cover;
 
         filter: saturate(0%);
-        width: 110%;
+        width: 96%;
         height: 100%;
         transform: translate(10px, 80px);
 
@@ -170,7 +171,7 @@
     }
 
     .award {
-      border-bottom: 1px solid;
+      border-bottom: 1px solid rgba(245, 245, 245, 0.493);
     }
     span {
       margin-top: 200px;

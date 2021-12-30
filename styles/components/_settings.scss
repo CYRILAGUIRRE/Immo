@@ -46,6 +46,7 @@ li {
 }
 
 header {
+  position: relative;
   background: url(#{$path-css}img/01.272.07.005.jpg) center/cover;
 
   &::before {

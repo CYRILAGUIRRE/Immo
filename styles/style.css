@@ -25,6 +25,7 @@ li {
 }
 
 header {
+  position: relative;
   background: url(../assets/img/01.272.07.005.jpg) center/cover;
 }
 
@@ -251,18 +252,20 @@ header .text span {
   padding-left: 5%;
 }
 
+.main .card-1 {
+  margin-top: 20px;
+}
+
 .main .card-1 .imgs {
-  height: 189px;
+  height: 250px;
   position: relative;
 }
 
 .main .card-1 .imgs .img1-container {
-  background: url(../assets/img/office-hp.jpg) center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background: url(../assets/img/office-hp.jpg) center/cover;
   height: 100%;
   width: 65%;
-  margin: 40px 50%;
+  margin: 10% 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 2;
@@ -274,7 +277,7 @@ header .text span {
   -webkit-filter: saturate(0%);
           filter: saturate(0%);
   width: 100%;
-  height: 70%;
+  height: 80%;
   margin: 0 auto;
   -webkit-transform: translateY(80px);
           transform: translateY(80px);
@@ -315,7 +318,7 @@ header .text span {
   background: url(../assets/img/Sendero-Verde-1.jpg) bottom/cover;
   -webkit-filter: saturate(0%);
           filter: saturate(0%);
-  width: 110%;
+  width: 96%;
   height: 100%;
   -webkit-transform: translate(10px, 80px);
           transform: translate(10px, 80px);
@@ -416,10 +419,140 @@ header .text span {
 }
 
 .main .awards-container .award {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.493);
 }
 
 .main .awards-container span {
   margin-top: 200px;
+}
+
+.news {
+  background: black;
+  color: white;
+}
+
+.news .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 90px 10% 20px;
+  font-family: "font-1", sans-serif;
+  font-size: 0.8rem;
+}
+
+.news .title span {
+  color: #19c99d;
+  font-size: 0.6rem;
+}
+
+.news .newsContainer {
+  height: 360px;
+}
+
+.news .news-1 {
+  height: 85%;
+  width: 70%;
+  background: url(../assets/img/Lobello-Ryan-1.jpg) center/cover;
+  margin-left: 10%;
+  padding: 180px 5% 0;
+  font-family: "font-1", sans-serif;
+  font-size: 0.9rem;
+}
+
+.news .news-1 p {
+  padding-bottom: 10px;
+}
+
+.news .news-1 span {
+  color: #19c99d;
+  font-family: "font-3", sans-serif;
+  font-size: 0.6rem;
+  padding-top: 20px;
+}
+
+footer .top-footer {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+}
+
+footer .top-footer h2 {
+  font-family: "font-2", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+  padding: 10% 5% 10%;
+}
+
+footer .top-footer nav {
+  margin-bottom: 80px;
+}
+
+footer .top-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .top-footer ul li {
+  border-bottom: 1px solid;
+  margin-left: 5%;
+  font-family: "font-2", sans-serif;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+footer .top-footer ul li:first-child {
+  color: #19c99d;
+}
+
+footer .top-footer ul:hover {
+  color: #19c99d;
+}
+
+footer .top-footer ul:hover li:not(:hover) {
+  color: grey;
+}
+
+footer .footer-bottom .logo {
+  padding: 30px 5% 30px;
+}
+
+footer .footer-bottom .footer-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 0 5% 0;
+}
+
+footer .footer-bottom .footer-list h4 {
+  font-family: "font-1", sans-serif;
+  font-size: 0.8rem;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: rgba(85, 85, 85, 0.664);
+}
+
+footer .footer-bottom .footer-list li {
+  font-family: "font-2", sans-serif;
+  font-size: 0.6rem;
+  line-height: 20px;
+  color: rgba(128, 128, 128, 0.61);
+  cursor: pointer;
+}
+
+footer .footer-bottom .footer-list li:hover {
+  color: #19c99d;
+}
+
+footer .footer-bottom p {
+  font-family: "font-3", sans-serif;
+  font-size: 0.4rem;
+  padding: 40px 5%;
+  color: rgba(128, 128, 128, 0.61);
 }
 /*# sourceMappingURL=style.css.map */

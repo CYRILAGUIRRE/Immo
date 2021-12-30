@@ -1,0 +1,70 @@
+footer {
+  .top-footer {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+    h2 {
+      font-family: $font-2;
+      font-size: 0.8rem;
+      font-weight: 900;
+      padding: 10% 5% 10%;
+    }
+    nav {
+      margin-bottom: 80px;
+    }
+    ul {
+      display: flex;
+      li {
+        border-bottom: 1px solid;
+        margin-left: 5%;
+        font-family: $font-2;
+        font-size: 0.6rem;
+        cursor: pointer;
+
+        &:first-child {
+          color: $color-1;
+        }
+      }
+      &:hover {
+        color: $color-1;
+      }
+      &:hover li:not(:hover) {
+        color: grey;
+      }
+    }
+  }
+  .footer-bottom {
+    .logo {
+      padding: 30px 5% 30px;
+    }
+    .footer-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 5% 0;
+
+      h4 {
+        font-family: $font-1;
+        font-size: 0.8rem;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        color: rgba(85, 85, 85, 0.664);
+      }
+
+      li {
+        font-family: $font-2;
+        font-size: 0.6rem;
+        line-height: 20px;
+        color: rgba(128, 128, 128, 0.61);
+        cursor: pointer;
+
+        &:hover {
+          color: $color-1;
+        }
+      }
+    }
+    p {
+      font-family: $font-3;
+      font-size: 0.4rem;
+      padding: 40px 5%;
+      color: rgba(128, 128, 128, 0.61);
+    }
+  }
+}

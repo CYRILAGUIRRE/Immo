@@ -1,0 +1,42 @@
+.news {
+  background: black;
+  color: white;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 90px 10% 20px;
+    font-family: $font-1;
+    font-size: 0.8rem;
+
+    span {
+      color: $color-1;
+      font-size: 0.6rem;
+    }
+  }
+
+  .newsContainer {
+    height: 360px;
+  }
+  .news-1 {
+    height: 85%;
+    width: 70%;
+    background: url(#{$path-css}img/Lobello-Ryan-1.jpg) center/cover;
+    margin-left: 10%;
+    padding: 180px 5% 0;
+    font-family: $font-1;
+    font-size: 0.9rem;
+
+    p {
+      padding-bottom: 10px;
+    }
+
+    span {
+      color: $color-1;
+      font-family: $font-3;
+      font-size: 0.6rem;
+      padding-top: 20px;
+    }
+  }
+}
