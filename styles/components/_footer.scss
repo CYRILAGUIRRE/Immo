@@ -32,6 +32,15 @@ footer {
     }
   }
   .footer-bottom {
+    .endFoot {
+      @media screen and (min-width: 840px) {
+        display: flex;
+
+        h4 {
+          margin-top: 22px;
+        }
+      }
+    }
     .logo {
       padding: 30px 5% 30px;
     }
@@ -39,6 +48,21 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 0 5% 0;
+
+      .projects {
+        display: flex;
+        flex-direction: column;
+      }
+      @media screen and (max-width: 840px) {
+        .blank {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 840px) {
+        .blankMinWidth {
+          display: none;
+        }
+      }
 
       h4 {
         font-family: $font-1;
@@ -57,6 +81,19 @@ footer {
 
         &:hover {
           color: $color-1;
+        }
+      }
+      @media screen and(min-width:840px) {
+        display: grid;
+        grid-template-columns: 20% 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        grid-template-areas: "firm expertise projects blank connect";
+
+        .blank {
+          grid-area: blank;
+        }
+        .connect {
+          grid-area: connect;
         }
       }
     }

@@ -13,30 +13,69 @@
     span {
       color: $color-1;
       font-size: 0.6rem;
+      position: absolute;
+      right: 40px;
+      padding-bottom: 30px;
     }
   }
 
   .newsContainer {
-    height: 360px;
+    height: 440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 10%;
   }
   .news-1 {
     height: 85%;
-    width: 70%;
+    width: 90%;
     background: url(#{$path-css}img/Lobello-Ryan-1.jpg) center/cover;
-    margin-left: 10%;
+
     padding: 180px 5% 0;
     font-family: $font-1;
     font-size: 0.9rem;
+  }
+  p {
+    padding-bottom: 30px;
+  }
+  .news-2 {
+    height: 85%;
+    width: 90%;
+    background: url(#{$path-css}img/01.199.12.034.no.rights-crop.jpg)
+      center/cover;
+    padding: 180px 5% 0;
+    font-family: $font-1;
+    font-size: 0.9rem;
+  }
+  .news-3 {
+    height: 85%;
+    width: 100%;
+    background: url(#{$path-css}img/00.526.11.055.jpg) center/cover;
+    padding: 180px 5% 0;
+    font-family: $font-1;
+    font-size: 0.9rem;
+    position: relative;
+  }
+  span {
+    color: $color-1;
+    font-family: $font-3;
+    font-size: 0.6rem;
+    padding-top: 20px;
 
-    p {
-      padding-bottom: 10px;
+    position: absolute;
+  }
+  @media screen and (max-width: 640px) {
+    .news-2 {
+      display: none;
     }
 
-    span {
-      color: $color-1;
-      font-family: $font-3;
-      font-size: 0.6rem;
-      padding-top: 20px;
+    .news-3 {
+      display: none;
+    }
+    .news-1 {
+      width: 100%;
+      min-width: 250px;
+      overflow: hidden;
     }
   }
 }
