@@ -257,13 +257,13 @@ header .text span {
 }
 
 .main .card-1 .imgs {
-  height: 250px;
+  height: 300px;
   position: relative;
 }
 
 .main .card-1 .imgs .img1-container {
   background: url(../assets/img/office-hp.jpg) center/cover;
-  height: 100%;
+  height: 250px;
   width: 65%;
   margin: 10% 50%;
   -webkit-transform: translateX(-50%);
@@ -277,10 +277,10 @@ header .text span {
   -webkit-filter: saturate(0%);
           filter: saturate(0%);
   width: 100%;
-  height: 80%;
+  height: 65%;
   margin: 0 auto;
-  -webkit-transform: translateY(80px);
-          transform: translateY(80px);
+  -webkit-transform: translateY(65px);
+          transform: translateY(65px);
   z-index: 1;
 }
 
@@ -296,6 +296,19 @@ header .text span {
   font-size: 0.6rem;
   margin: 10px 0 10px;
   line-height: 18px;
+}
+
+@media screen and (max-width: 820px) {
+  .main .card-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.main .card-2 {
+  grid-area: imgs;
 }
 
 .main .card-2 .imgs {
@@ -325,6 +338,10 @@ header .text span {
   z-index: 1;
 }
 
+.main .card-2 .text {
+  grid-area: text;
+}
+
 .main .card-2 .text h3 {
   font-family: "font-2", sans-serif;
   font-weight: bolder;
@@ -337,6 +354,16 @@ header .text span {
   font-size: 0.6rem;
   margin: 10px 0 10px;
   line-height: 18px;
+}
+
+@media screen and (max-width: 820px) {
+  .main .card-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "text imgs";
+  }
 }
 
 .main .card-3 .imgs {
@@ -384,6 +411,15 @@ header .text span {
 .main .card-3 .text button {
   display: block;
   padding: 0 0 8px 0;
+}
+
+@media screen and (max-width: 820px) {
+  .main .card-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 .main .office {
